@@ -1,0 +1,23 @@
+node
+{
+    stage('checkout')
+    {
+        workspace=pwd()
+    }
+    stage('static code analysis')
+    {
+        echo "static code analysis"
+    }
+    stage('Build')
+    {
+        echo "build"
+    }
+    stage('unit testing')
+    {
+        echo "unit testing"
+    }
+    stage('delivary')
+    {
+        echo "delivary"
+    }
+}

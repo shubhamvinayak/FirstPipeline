@@ -2,6 +2,7 @@ node
 {
     stage('checkout')
     {
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[]]])
         workspace=pwd()
     }
     stage('static code analysis')

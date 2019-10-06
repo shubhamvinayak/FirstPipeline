@@ -18,8 +18,12 @@ checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleC
     {
         echo "unit testing"
     }
-    stage('delivary')
+    stages('delivary')
     {
         echo "delivary"
+        stage('branch')
+        {
+        echo "branch"
+        }
     }
 }

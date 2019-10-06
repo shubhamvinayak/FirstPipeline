@@ -9,6 +9,7 @@ checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleC
     {
         echo "branch"
     }
+    }
     stage('static code analysis')
     {
         echo "static code analysis"
